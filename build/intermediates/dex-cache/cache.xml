@@ -9,6 +9,13 @@
         <dex dex="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/pre-dexed/debug/classes-2e03775358fedd796c2e5cb805dd13b822325ab2.jar" />
     </item>
     <item
+        jar="/Users/motobayojiro/.gradle/caches/modules-2/files-2.1/de.greenrobot/greendao/1.3.7/dda08161d004c4df96938da6909f1c2b96cd33c8/greendao-1.3.7.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dda08161d004c4df96938da6909f1c2b96cd33c8">
+        <dex dex="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/pre-dexed/debug/greendao-1.3.7-9187ea34c1efbc1cc495451f09426f26ec4b501f.jar" />
+    </item>
+    <item
         jar="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"

@@ -1,29 +1,28 @@
 package samples.com.cruumb.samples;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
+import android.net.Uri;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
-import android.os.Bundle;
-import android.view.Gravity;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
+
+import samples.com.cruumb.samples.greendao.fragment.GreenDaoSampleFragment;
 
 
 /**
  * Main.
  */
 public class MainActivity extends ActionBarActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks, GreenDaoSampleFragment.OnFragmentInteractionListener {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -37,6 +36,7 @@ public class MainActivity extends ActionBarActivity
 
     /**
      * onCreate.
+     *
      * @param savedInstanceState
      */
     @Override
@@ -56,19 +56,27 @@ public class MainActivity extends ActionBarActivity
 
     /**
      * onNavigationDrawerItemSelected.
+     *
      * @param position
      */
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
+        if (position == 0) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, GreenDaoSampleFragment.newInstance())
+                    .commit();
+        } else {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                    .commit();
+        }
     }
 
     /**
      * onSectionAttached.
+     *
      * @param number
      */
     public void onSectionAttached(int number) {
@@ -97,6 +105,7 @@ public class MainActivity extends ActionBarActivity
 
     /**
      * onCreateOptionsMenu
+     *
      * @param menu
      * @return
      */
@@ -115,6 +124,7 @@ public class MainActivity extends ActionBarActivity
 
     /**
      * onOptionsItemSelected.
+     *
      * @param item
      * @return
      */
@@ -131,6 +141,14 @@ public class MainActivity extends ActionBarActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     *
+     * @param uri
+     */
+    public void onFragmentInteraction(Uri uri) {
+        Log.d("", uri.toString());
     }
 
     /**
