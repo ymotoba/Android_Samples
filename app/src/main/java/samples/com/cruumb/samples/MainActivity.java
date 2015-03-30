@@ -148,7 +148,7 @@ public class MainActivity extends ActionBarActivity
      * @param uri
      */
     public void onFragmentInteraction(Uri uri) {
-        Log.d("", uri.toString());
+        Log.d(Const.LOG_TAG, uri.toString());
     }
 
     /**

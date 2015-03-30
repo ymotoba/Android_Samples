@@ -21,7 +21,7 @@ task daoGenerator {
         Schema schema = new Schema(dbVersion, daoOutputPackage);
         // ------------- この辺でテーブル定義 START -------------------
         Entity hogeTable = schema.addEntity("HogeTable");
-        hogeTable.addLongProperty("id").primaryKey().autoincrement().notNull().unique();
+        hogeTable.addIdProperty("id").autoincrement().primaryKey();
         hogeTable.addLongProperty("fuga").notNull();
         hogeTable.addStringProperty("hoge").notNull();
 
