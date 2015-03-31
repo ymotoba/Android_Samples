@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import samples.com.cruumb.samples.activeandroid.fragment.ActiveAndroidSampleFragment;
 import samples.com.cruumb.samples.greendao.fragment.GreenDaoSampleFragment;
 
 
@@ -67,6 +68,10 @@ public class MainActivity extends ActionBarActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.container, GreenDaoSampleFragment.newInstance())
                     .commit();
+        } else if (position == 1) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, ActiveAndroidSampleFragment.newInstance())
+                    .commit();
         } else {
             fragmentManager.beginTransaction()
                     .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
@@ -82,10 +87,10 @@ public class MainActivity extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_greendao);
+                mTitle = "GreenDao";
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = "ActiveAndroid";
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);

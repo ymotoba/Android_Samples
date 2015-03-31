@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="samples.com.cruumb.samples.greendao.fragment.GreenDaoSampleFragment">
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"/>
+
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="insert"/>
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="select"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:text="@string/hello_blank_fragment"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
