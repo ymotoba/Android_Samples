@@ -104,7 +104,7 @@ public class NavigationDrawerFragment extends Fragment {
                 new String[]{
                         "GreenDao",
                         "ActiveAndroid",
-                        getString(R.string.title_section3),
+                        "AndroidAnnotations",
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;

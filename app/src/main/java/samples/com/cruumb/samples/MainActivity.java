@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import samples.com.cruumb.samples.activeandroid.fragment.ActiveAndroidSampleFragment;
+import samples.com.cruumb.samples.androidannotations.fragment.AndroidAnnotationsFragment;
 import samples.com.cruumb.samples.greendao.fragment.GreenDaoSampleFragment;
 
 
@@ -72,6 +73,10 @@ public class MainActivity extends ActionBarActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.container, ActiveAndroidSampleFragment.newInstance())
                     .commit();
+        } else if (position == 2) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, AndroidAnnotationsFragment.newInstance())
+                    .commit();
         } else {
             fragmentManager.beginTransaction()
                     .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
@@ -93,7 +98,7 @@ public class MainActivity extends ActionBarActivity
                 mTitle = "ActiveAndroid";
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
+                mTitle = "AndroidAnnotations";
                 break;
         }
     }

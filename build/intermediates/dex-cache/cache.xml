@@ -16,18 +16,18 @@
         <dex dex="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/pre-dexed/debug/classes-2e03775358fedd796c2e5cb805dd13b822325ab2.jar" />
     </item>
     <item
-        jar="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-20f6f3c915454efc2340e6cbc748729dbd75db1c.jar" />
-    </item>
-    <item
         jar="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/pre-dexed/debug/classes-01fab8079e3198d3dc5b5cc7872cb71f2dfbb8b3.jar" />
+    </item>
+    <item
+        jar="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-20f6f3c915454efc2340e6cbc748729dbd75db1c.jar" />
     </item>
     <item
         jar="/Users/motobayojiro/Desktop/software/android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
@@ -42,6 +42,13 @@
         revision="21.1.2"
         sha1="549f7ac73acac33a88e4f3a4832f37edda7154c4">
         <dex dex="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/pre-dexed/debug/ActiveAndroid-5c8798bac69955929e8962013bb4ed134fd0babc.jar" />
+    </item>
+    <item
+        jar="/Users/motobayojiro/.gradle/caches/modules-2/files-2.1/org.androidannotations/androidannotations-api/3.2/89b33bb1e996eb2c4089f79d1b8651c71fe8e2d1/androidannotations-api-3.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="89b33bb1e996eb2c4089f79d1b8651c71fe8e2d1">
+        <dex dex="/Users/motobayojiro/Desktop/PJ/cruumb/Samples/app/build/intermediates/pre-dexed/debug/androidannotations-api-3.2-f593263e8b4930fff990c87793df5bd15ecae119.jar" />
     </item>
 
 </items>
