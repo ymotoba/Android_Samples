@@ -3,12 +3,17 @@ package samples.com.cruumb.samples.androidannotations.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
+import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.web.client.RestTemplate;
 
+import samples.com.cruumb.samples.Const;
 import samples.com.cruumb.samples.R;
 
 /**
@@ -53,5 +58,22 @@ public class AndroidAnnotationsFragment extends Fragment {
     void onClickSampleButton(View v) {
         System.out.println("onClickSampleButton");
         Toast.makeText(getActivity().getApplicationContext(), "onClickSampleButton", Toast.LENGTH_SHORT).show();
+    }
+
+    @Click(R.id.restTestButton)
+    void onClickRestTestButton(View v) {
+        restTest();
+        Log.d(Const.LOG_TAG, "called restTest");
+    }
+
+    @Background
+    void restTest()
+    {
+        String url = "https://ajax.googleapis.com/ajax/" +
+                "services/search/web?v=1.0&q={query}";
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
+        String result = restTemplate.getForObject(url, String.class, "Android");
+        Log.d(Const.LOG_TAG, result);
     }
 }

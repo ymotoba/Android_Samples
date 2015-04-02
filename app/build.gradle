@@ -25,6 +25,10 @@ android {
             java.srcDirs = ['src/main/java', 'src-gen/main/java']
         }
     }
+    packagingOptions {
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+    }
 }
 
 dependencies {
@@ -35,6 +39,8 @@ dependencies {
     // AndroidAnnotations
     apt "org.androidannotations:androidannotations:$AAVersion"
     compile "org.androidannotations:androidannotations-api:$AAVersion"
+    // spring framework
+    compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
 }
 
 // aptの設定
